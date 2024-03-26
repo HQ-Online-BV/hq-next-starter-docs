@@ -1,15 +1,33 @@
 {
-  "index": "Introduction",
+  "gettingStarted": {
+    "type": "separator",
+    "title": "Getting Started"
+  },
+
+  "index": "Introductie",
+  "structure": "Project structuur",
+  "installation": "Installatie",
+
+  "blokken": {
+    "type": "separator",
+    "title": "Blokken"
+  },
+
+  "een-blok-aanmaken-wordpress": "Een blok aanmaken (wordpress)",
+  "een-blok-aanmaken-next": "Een blok aanmaken (Next.js)",
+  "een-blok-registreren": "Een blok registreren",
+
+  "cpt": {
+    "type": "separator",
+    "title": "Custom Posttypes"
+  },
+
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+
+  "seo": {
+    "type": "separator",
+    "title": "SEO"
   }
+
 }

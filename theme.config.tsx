@@ -1,18 +1,24 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>HQ Online Headless Starter</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/HQ-Online-BV/hq-next-starter-test-2',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/HQ-Online-BV/hq-next-starter-test-2',
   footer: {
-    text: 'Nextra Docs Template',
+    text: '',
   },
+  useNextSeoProps() {
+    const { asPath } = useRouter()
+    if (asPath !== '/') {
+      return {
+        titleTemplate: '%s – HQ Online'
+      }
+    }
+  }
 }
 
 export default config
