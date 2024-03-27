@@ -15,7 +15,14 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter()
     if (asPath !== '/') {
       return {
-        titleTemplate: '%s – HQ Online'
+        titleTemplate: '%s – HQ Online',
+        noindex: true,
+        nofollow: true,
+      }
+    }else{
+      return{
+        noindex: true,
+        nofollow: true,
       }
     }
   }
